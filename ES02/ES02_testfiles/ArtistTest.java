@@ -1,3 +1,13 @@
+// **************************************************
+// 
+//       git.rev = 234
+//  git.revision = fdd4980be270473bdd7e8206afeda65ab6e4c3a4
+//         stage = ES02
+//
+// ***************************************************
+
+
+
 package MusicLandscape.tests;
 
 import java.lang.reflect.Field;
@@ -19,6 +29,11 @@ import static org.testng.Assert.*;
  *
  */
 public class ArtistTest {
+
+	
+	
+	
+	
 	@Test
 	/**
 	 * checks if initial value of name is "unknown"

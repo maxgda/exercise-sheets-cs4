@@ -7,6 +7,30 @@ public class Track {
     private Artist performer = new Artist();
     private int    year      = 0;
 
+    public Track() {
+        setTitle(null);
+        setDuration(0);
+        setWriter(new Artist());
+        setPerformer(new Artist());
+        setYear(1900);
+    }
+
+    public Track(Track t) {
+        this.duration = t.getDuration();
+        this.year = t.getYear();
+        this.title = t.getTitle();
+        this.writer = new Artist(t.getWriter());
+        this.performer = new Artist(t.getPerformer());
+    }
+
+    public Track(String title) {
+        setTitle(title);
+        setDuration(0);
+        setWriter(new Artist());
+        setPerformer(new Artist());
+        setYear(1900);
+    }
+
     public int getYear() {
         return year;
     }

@@ -3,6 +3,17 @@ package MusicLandscape.entities;
 public class Artist {
     private String name;
 
+    public Artist() {
+        name = "unknown";
+    }
+
+    public Artist(String name) {
+        this.name = name;
+    }
+    public Artist(Artist a) {
+        setName(a.getName());
+    }
+
     public String getName() {
         return name;
     }
