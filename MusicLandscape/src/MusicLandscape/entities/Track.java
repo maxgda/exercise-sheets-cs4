@@ -27,7 +27,7 @@ public class Track {
         if (inputDuration >= 0) {
             this.duration = inputDuration;
         } else {
-            System.out.printf("duration cant be negative, duration: %d", inputDuration);
+            System.out.printf("duration cant be negative, duration: %d%n", inputDuration);
         }
     }
 
